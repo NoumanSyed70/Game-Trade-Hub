@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Trade Hub - PC Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Game Trade Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="browse.html">Browse Listings</a></li>
+                <li><a href="post-ad.html">Post Ad</a></li>
+                <li><a href="my-listings.html">My Listings</a></li>
+                <li><a href="tournaments.html">Tournaments</a></li>
+                <li><a href="prebuilt-pcs.html">Prebuilt PCs</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pc-details-page">
+        <button class="back-btn" onclick="window.history.back()">← Back to PCs</button>
+        
+        <div id="pcDetailsContainer" class="pc-details-container">
+            <!-- PC details will be dynamically inserted here -->
+        </div>
+        
+        <div id="pcNotFound" class="pc-not-found hidden">
+            <p>PC details not found. Please go back to listings.</p>
+            <a href="prebuilt-pcs.html" class="btn">View All PCs</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Game Trade Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/pc-details.js"></script>
+</body>
+</html>

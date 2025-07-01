@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Trade Hub - Post Ad</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Game Trade Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="browse.html">Browse Listings</a></li>
+                <li><a href="post-ad.html" class="active">Post Ad</a></li>
+                <li><a href="my-listings.html">My Listings</a></li>
+                <li><a href="tournaments.html">Tournaments</a></li>
+                <li><a href="prebuilt-pcs.html">Prebuilt PCs</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="post-ad-page">
+        <h2>Post a New Listing</h2>
+        <form id="postAdForm">
+            <div class="form-group">
+                <label for="title">Product Title</label>
+                <input type="text" id="title" placeholder="e.g., Call of Duty: Modern Warfare II" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="type">Category/Type</label>
+                <select id="type" required style="font-size: 90%;">
+                    <option value="">Select a type</option>
+                    <option value="game">Game</option>
+                    <option value="console">Console</option>
+                    <option value="accessory">Accessory</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="platform">Platform</label>
+                <select id="platform" required style="font-size: 90%;">
+                    <option value="">Select a platform</option>
+                    <option value="pc">PC</option>
+                    <option value="ps5">PS5</option>
+                    <option value="xbox">Xbox</option>
+                    <option value="nintendo">Nintendo</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="price">Price (PKR)</label>
+                <input type="number" id="price" placeholder="5000 etc" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="image">Image URL</label>
+                <input type="file" id="imageUpload" accept="image/*" multiple required>
+            </div>
+            
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Post Ad</button>
+        </form>
+        
+        <div id="successMessage" class="success-message hidden">
+            <p>Ad posted successfully!</p>
+            <a href="my-listings.html" class="btn">View My Listings</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Game Trade Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/post-ad.js"></script>
+</body>
+</html>

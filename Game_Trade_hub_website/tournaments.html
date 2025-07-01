@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Trade Hub - Tournaments</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Game Trade Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="browse.html">Browse Listings</a></li>
+                <li><a href="post-ad.html">Post Ad</a></li>
+                <li><a href="my-listings.html">My Listings</a></li>
+                <li><a href="tournaments.html" class="active">Tournaments</a></li>
+                <li><a href="prebuilt-pcs.html">Prebuilt PCs</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="tournaments-page">
+        <h2>Upcoming Tournaments</h2>
+        
+        <div class="tournaments-grid" id="tournamentsContainer">
+            <!-- Tournaments will be dynamically inserted here -->
+        </div>
+        
+        <div id="noTournamentsMessage" class="no-tournaments hidden">
+            <p>No tournaments are currently available. Check back soon!</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Game Trade Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/tournaments.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Trade Hub - Browse Listings</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Game Trade Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="browse.html" class="active">Browse Listings</a></li>
+                <li><a href="post-ad.html">Post Ad</a></li>
+                <li><a href="my-listings.html">My Listings</a></li>
+                <li><a href="tournaments.html">Tournaments</a></li>
+                <li><a href="prebuilt-pcs.html">Prebuilt PCs</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="browse-page">
+        <section class="search-filters">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search listings...">
+                <button id="searchBtn">Search</button>
+            </div>
+            <div class="filters">
+                <select id="platformFilter" style="font-size: medium;">
+                    <option value="all">All Platforms</option>
+                    <option value="pc">PC</option>
+                    <option value="ps5">PS5</option>
+                    <option value="xbox">Xbox</option>
+                    <option value="nintendo">Nintendo</option>
+                </select>
+                <select id="typeFilter" style="font-size: medium;">
+                    <option value="all">All Types</option>
+                    <option value="game">Game</option>
+                    <option value="console">Console</option>
+                    <option value="accessory">Accessory</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="listings-grid" id="listingsContainer">
+            <!-- Listings will be dynamically inserted here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Game Trade Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/listings.js"></script>
+</body>
+</html>
